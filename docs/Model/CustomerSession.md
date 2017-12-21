@@ -24,6 +24,7 @@ Name | Type | Description | Notes
 **isCPA** | **bool** |  | [optional] [default to false]
 **subIds** | [**\Swagger\Client\Model\CustomerSessionSubIds**](CustomerSessionSubIds.md) |  | [optional] 
 **clickId** | **string** |  | [optional] 
+**merchantSubId** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
