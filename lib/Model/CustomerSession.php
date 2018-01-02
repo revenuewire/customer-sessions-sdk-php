@@ -75,7 +75,8 @@ class CustomerSession implements ArrayAccess
         'isCPA' => 'bool',
         'subIds' => '\Swagger\Client\Model\CustomerSessionSubIds',
         'clickId' => 'string',
-        'merchantSubId' => 'string'
+        'merchantSubId' => 'string',
+        'merchantAliasId' => 'string'
     ];
 
     public static function swaggerTypes()
@@ -109,7 +110,8 @@ class CustomerSession implements ArrayAccess
         'isCPA' => 'isCPA',
         'subIds' => 'subIds',
         'clickId' => 'clickId',
-        'merchantSubId' => 'merchantSubId'
+        'merchantSubId' => 'merchantSubId',
+        'merchantAliasId' => 'merchantAliasId'
     ];
 
 
@@ -139,7 +141,8 @@ class CustomerSession implements ArrayAccess
         'isCPA' => 'setIsCPA',
         'subIds' => 'setSubIds',
         'clickId' => 'setClickId',
-        'merchantSubId' => 'setMerchantSubId'
+        'merchantSubId' => 'setMerchantSubId',
+        'merchantAliasId' => 'setMerchantAliasId'
     ];
 
 
@@ -169,7 +172,8 @@ class CustomerSession implements ArrayAccess
         'isCPA' => 'getIsCPA',
         'subIds' => 'getSubIds',
         'clickId' => 'getClickId',
-        'merchantSubId' => 'getMerchantSubId'
+        'merchantSubId' => 'getMerchantSubId',
+        'merchantAliasId' => 'getMerchantAliasId'
     ];
 
     public static function attributeMap()
@@ -225,6 +229,7 @@ class CustomerSession implements ArrayAccess
         $this->container['subIds'] = isset($data['subIds']) ? $data['subIds'] : null;
         $this->container['clickId'] = isset($data['clickId']) ? $data['clickId'] : null;
         $this->container['merchantSubId'] = isset($data['merchantSubId']) ? $data['merchantSubId'] : null;
+        $this->container['merchantAliasId'] = isset($data['merchantAliasId']) ? $data['merchantAliasId'] : null;
     }
 
     /**
@@ -728,6 +733,27 @@ class CustomerSession implements ArrayAccess
     public function setMerchantSubId($merchantSubId)
     {
         $this->container['merchantSubId'] = $merchantSubId;
+
+        return $this;
+    }
+
+    /**
+     * Gets merchantAliasId
+     * @return string
+     */
+    public function getMerchantAliasId()
+    {
+        return $this->container['merchantAliasId'];
+    }
+
+    /**
+     * Sets merchantAliasId
+     * @param string $merchantAliasId
+     * @return $this
+     */
+    public function setMerchantAliasId($merchantAliasId)
+    {
+        $this->container['merchantAliasId'] = $merchantAliasId;
 
         return $this;
     }
