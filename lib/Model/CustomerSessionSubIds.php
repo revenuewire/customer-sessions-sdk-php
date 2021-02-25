@@ -57,7 +57,9 @@ class CustomerSessionSubIds implements ArrayAccess
         'subId' => 'string',
         'subId2' => 'string',
         'subId3' => 'string',
-        'clickId' => 'string'
+        'clickId' => 'string',
+        'subId4' => 'string',
+        'subId5' => 'string'
     ];
 
     public static function swaggerTypes()
@@ -73,7 +75,9 @@ class CustomerSessionSubIds implements ArrayAccess
         'subId' => 'subId',
         'subId2' => 'subId2',
         'subId3' => 'subId3',
-        'clickId' => 'clickId'
+        'clickId' => 'clickId',
+        'subId4' => 'subId4',
+        'subId5' => 'subId5'
     ];
 
 
@@ -85,7 +89,9 @@ class CustomerSessionSubIds implements ArrayAccess
         'subId' => 'setSubId',
         'subId2' => 'setSubId2',
         'subId3' => 'setSubId3',
-        'clickId' => 'setClickId'
+        'clickId' => 'setClickId',
+        'subId4' => 'setSubId4',
+        'subId5' => 'setSubId5'
     ];
 
 
@@ -97,7 +103,9 @@ class CustomerSessionSubIds implements ArrayAccess
         'subId' => 'getSubId',
         'subId2' => 'getSubId2',
         'subId3' => 'getSubId3',
-        'clickId' => 'getClickId'
+        'clickId' => 'getClickId',
+        'subId4' => 'getSubId4',
+        'subId5' => 'getSubId5'
     ];
 
     public static function attributeMap()
@@ -135,6 +143,8 @@ class CustomerSessionSubIds implements ArrayAccess
         $this->container['subId2'] = isset($data['subId2']) ? $data['subId2'] : null;
         $this->container['subId3'] = isset($data['subId3']) ? $data['subId3'] : null;
         $this->container['clickId'] = isset($data['clickId']) ? $data['clickId'] : null;
+        $this->container['subId4'] = isset($data['subId4']) ? $data['subId4'] : null;
+        $this->container['subId5'] = isset($data['subId5']) ? $data['subId5'] : null;
     }
 
     /**
@@ -245,6 +255,49 @@ class CustomerSessionSubIds implements ArrayAccess
 
         return $this;
     }
+
+    /**
+     * Gets subId4
+     * @return string
+     */
+    public function getSubId4()
+    {
+        return $this->container['subId4'];
+    }
+
+    /**
+     * Sets subId4
+     * @param string $subId4
+     * @return $this
+     */
+    public function setSubId4($subId4)
+    {
+        $this->container['subId4'] = $subId4;
+
+        return $this;
+    }
+
+    /**
+     * Gets subId5
+     * @return string
+     */
+    public function getSubId5()
+    {
+        return $this->container['subId5'];
+    }
+
+    /**
+     * Sets subId5
+     * @param string $subId5
+     * @return $this
+     */
+    public function setSubId5($subId5)
+    {
+        $this->container['subId5'] = $subId5;
+
+        return $this;
+    }
+
     /**
      * Returns true if offset exists. False otherwise.
      * @param  integer $offset Offset

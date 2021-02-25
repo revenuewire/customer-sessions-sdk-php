@@ -7,6 +7,8 @@ Name | Type | Description | Notes
 **subId2** | **string** |  | [optional] 
 **subId3** | **string** |  | [optional] 
 **clickId** | **string** |  | [optional] 
+**subId4** | **string** |  | [optional] 
+**subId5** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
